@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Продукт</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="row container">
+        <a class="nav-btn fa fa-bars" href="#"></a>
+        <a class="main-phone" href="tel:+78003333672">
+          <i class="fa fa-phone"></i>
+          +7(800)333-36-72
+        </a>
+        <a class="logo" href="/">
+          <img src="img/logo.svg" alt="Logotype">
+        </a>
+        <div class="user-actions">
+          <a class="fa fa-search search-btn" href="#"></a>
+          <a class="fa fa-heart-o bookmarks-btn" href="#">
+            <span class="count">
+            </span>
+          </a>
+          <a class="fa fa-shopping-cart cart-btn" href="#">
+            <span class="count">
+            </span>
+          </a>
+          <a class="fa fa-user-o login-btn" href="#"></a>
+        </div>
+      </div>
+      <nav class="main-nav row">
+        <div class="user-actions secondary">
+          <a class="login-btn" href="#">
+            <i class="fa fa-user-o"></i>
+            Личный кабинет
+          </a>
+          <a class="bookmarks-btn" href="#">
+            <i class="fa fa-heart-o">
+              <span class="count">
+              </span>
+            </i>
+            Мои желания
+          </a>
+        </div>
+        <a class="main-nav-item" href="collections.html">Коллекции</a>
+        <a class="main-nav-item" href="#">Мебель и интерьер</a>
+        <a class="main-nav-item" href="#">Аксессуары</a>
+        <a class="main-nav-item" href="#">Скидки</a>
+        <div class="secondary main-nav-item">
+          <div class="to-client">
+            <a class="link" href="#">Доставка и оплата</a>
+            <a class="link" href="#">Возврат и обмен</a>
+          </div>
+          <div class="contacts">
+            <a class="link" href="tel:+78003333672">+7 (800) 333-36-72</a>
+            <a class="link" href="mailto:example@mail.com">example@mail.com</a>
+            <a class="link address" href="#">г.Город, ул.Продольная д.23 к.2 кв. 190</a>
+          </div>
+        </div>
+      </nav>
+      <div class="shadow"></div>
+      <div class="search">
+        <form>
+          <input class="search-field" type="text" placeholder="Поиск">
+          <button class="fa fa-search to-search"></button>
+        </form>
+      </div>
+      <div class="bookmarks">
+        <ul class="bookmarks-list">
+          <li class="empty">Жалемых товаров пока нет</li>
+          <!-- <li class="bookmarks-item">
+            <img class="bookmarks-item-title" src="img/second.png" alt="Second item">
+            <div class="bookmarks-item-description">
+              <h4 class="bookmarks-item-heading">Плетеное кресло</h4>
+              <div class="bookmarks-item-info">
+                <div class="bookmarks-item-count">1</div>
+                <div class="bookmarks-item-price">3999 <span class="ruble"></span></div>
+              </div>
+            </div>
+            <a class="fa fa-trash-o bookmarks-item-del-btn" href="#"></a>
+          </li> -->
+        </ul>
+        <div class="bookmarks-bottom">
+          <a href="#" class="to-billing btn">Все</a>
+        </div>
+      </div>
+      <div class="cart">
+        <ul class="cart-list">
+          <li class="empty">В вашей корзине пусто</li>
+          <!-- <li class="cart-item">
+            <img class="cart-item-title" src="img/second.png" alt="Second item">
+            <div class="cart-item-description">
+              <h4 class="cart-item-heading">Плетеное кресло</h4>
+              <div class="cart-item-info">
+                <div class="cart-item-count">1</div>
+                <div class="cart-item-price">3999 <span class="ruble"></span></div>
+              </div>
+            </div>
+            <a class="fa fa-trash-o cart-item-del-btn" href="#"></a>
+          </li> -->
+        </ul>
+        <div class="cart-bottom">
+          <div class="cart-info">
+            <p>Сумма</p>
+            <span class="cart-total-price">0 <span class="ruble"></span></span>
+          </div>
+          <a href="#" class="to-billing btn">Оплатить</a>
+        </div>
+      </div>
+      <div class="login">
+        <form action="">
+          <div class="row">
+            <label>Почта</label>
+            <input type="email" required>
+          </div>
+          <div class="row">
+            <label>Пароль</label>
+            <input type="password" required>
+          </div>
+          <a class="to-recovery" href="#">Забыли пароль?</a>
+          <button type="submit" class="to-login btn">Войти</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="card container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a href="/">MARENGO</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#">Категории</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#">Мебель и интерьер</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#">Набор подушек</a>
+        </li>
+      </ul>
+      <div class="product">
+        <div class="product-gallery">
+          <div class="product-gallery-thumbs">
+            <div class="swiper-wrapper">
+              <img class="product-gallery-thumbs-item swiper-slide" src="img/product/1.jpg" alt="">
+              <img class="product-gallery-thumbs-item swiper-slide" src="img/product/2.JPG" alt="">
+              <img class="product-gallery-thumbs-item swiper-slide" src="img/product/3.JPG" alt="">
+              <img class="product-gallery-thumbs-item swiper-slide" src="img/product/4.JPG" alt="">
+              <img class="product-gallery-thumbs-item swiper-slide" src="img/product/5.JPG" alt="">
+              <img class="product-gallery-thumbs-item swiper-slide" src="http://divanby.com/sites/default/files/styles/original_image_with_watermark/public/sofas/viva_t6_1-1.jpg?itok=GBEuHOHq" alt="">
+            </div>
+          </div>
+          <div class="product-gallery-title">
+            <img class="product-gallery-title-image" src="" alt="Gallery title">
+            <a href="#" class="product-gallery-title-zoombtn fa fa-search-plus" aria-hidden="true"></a>
+            <i class="fa fa-long-arrow-left prev-btn-secondary" aria-hidden="true"></i>
+            <i class="fa fa-long-arrow-right next-btn-secondary" aria-hidden="true"></i>
+          </div>
+          <i class="fa fa-angle-up prev-btn"></i>
+          <i class="fa fa-angle-down next-btn"></i>
+        </div>
+        <div class="product-description">
+          <h2 class="product-name">Набор подушек</h2>
+          <div class="product-price">
+            3000 <span class="ruble"></span></i>
+          </div>
+          <div class="product-user-info">
+            Способ доставки и возврат
+          </div>
+          <div class="product-article">
+            Артикульный номер: <span class="art-number">223.576.845</span>
+          </div>
+          <form class="product-settings">
+            <div class="form-row">
+              <label>Цвет</label>
+              <select class="product-color">
+                <option>Красный</option>
+                <option>Синий</option>
+                <option>Желтый</option>
+                <option>Белый</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label>Размер</label>
+              <select class="product-size">
+                <option>30x30 см</option>
+                <option>50x50 см</option>
+                <option>70x70 см</option>
+              </select>
+            </div>
+            <div class="form-row product-count">
+              <label>Количество</label>
+              <button class="remove">-</button>
+              <input type="text" class="product-count-input" disabled value="1">
+              <button class="add">+</button>
+            </div>
+            <div class="form-action">
+              <button class="to-cart btn">Добавить в корзину</button>
+              <a href="#" class="to-bookmarks fa fa-heart-o"></a>
+            </div>
+          </form>
+          <div class="product-info">
+            <h3>Информация о товаре</h3>
+            <p>Чехол на подушку с разным рисунком с каждой стороны.</p>
+            <p>Благодаря молнии чехол легко снять.</p>
+          </div>
+          <div class="more-content">
+            <div class="product-instruction">
+              <h3>Инструкция по уходу</h3>
+              <ul>
+                <li>Машинная стирка <span class="num">40°С</span>.</li>
+                <li>Не отбеливать.</li>
+                <li>Не подвергать химической чистке</li>
+                <li>Перед стиркой выверните чехол наизнанку и застегните.</li>
+                <li>Не отбеливать.</li>
+                <li>Не сушить в стиральной машине.</li>
+                <li>Гладить с изнанки в среднем температурном режиме.</li>
+              </ul>
+            </div>
+            <div class="product-material">
+              <h3>Описание и размеры товара</h3>
+              <p><span class="num">100%</span> волокно рами</p>
+            </div>
+            <div class="product-weight">
+              <h3>Размеры и вес упаковки</h3>
+              <p>Артикульный номер: <span class="num">903.698.90</span></p>
+            </div>
+          </div>
+          <div class="action row">
+            <a href="#" class="more btn">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products container">
+      <h2 class="lined-heading">Вам может понравится</h2>
+      <div class="row products-carousel swiper-container">
+        <div class="swiper-wrapper">
+          <a href="#" class="product swiper-slide">
+            <img class="product-title" src="img/first.png" alt="First slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Дозатор для жидкого мыла</h3>
+              <div class="product-price">
+                <div class="old">400 <span class="ruble"></span></div>
+                <div class="new">299 <span class="ruble"></span></div>
+              </div>
+            </div>
+            <div class="product-discount">
+              30%
+            </div>
+          </a>
+          <a href="#" class="product swiper-slide">
+            <img class="product-title" src="img/second.png" alt="Second slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Плетеное кресло</h3>
+              <div class="product-price">
+                <div class="new">5400 <span class="ruble"></span></div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product swiper-slide">
+            <img class="product-title" src="img/third.png" alt="Third slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Посуда из коллекции "Ультра"</h3>
+              <div class="product-price">
+                <div class="new">5000 <span class="ruble"></span></div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product swiper-slide">
+            <img class="product-title" src="img/fourth.png" alt="Fourth slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Подушка с птицами</h3>
+              <div class="product-price">
+                <div class="new">1700 <span class="ruble"></span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <a class="btn" href="/collections.html">Вернуться к коллекциям</a>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-top container">
+      <div class="nav">
+        <h4>Навигация</h4>
+        <div class="nav-list">
+          <a class="nav-item link" href="collections.html">Коллекции</a>
+          <a class="nav-item link" href="#">Мебель и интерьер</a>
+          <a class="nav-item link" href="#">Аксессуары</a>
+          <a class="nav-item link" href="#">Скидки</a>
+        </div>
+      </div>
+      <div class="to-client">
+        <h4>Клиенту</h4>
+        <div class="to-client-list">
+          <a class="to-client-item link" href="#">Доставка и оплата</a>
+          <a class="to-client-item link" href="#">Возврат и обмен</a>
+        </div>
+      </div>
+      <div class="contacts">
+        <h4>Контакты</h4>
+        <div class="contacts-list">
+          <a class="contacts-item phone num link" href="tel:+78003333672">+7(800)333-36-72</a>
+          <a class="contacts-item link" href="#">адрес</a>
+          <a class="contacts-item mail link" href="mailto:">email</a>
+        </div>
+      </div>
+      <div class="follow">
+        <h4>Подписаться на рассылку</h4>
+        <form>
+          <input type="email" placeholder="Email Address" required>
+          <button class="fa fa-long-arrow-right"></button>
+        </form>
+        <div class="socials">
+          <a class="fa fa-instagram" href="#" target="_blank"></a>
+          <a class="fa fa-facebook" href="#" target="_blank"></a>
+          <a class="fa fa-vk" href="#" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="company">
+          Marengo &copy; 2017
+        </div>
+        <div class="develop">
+          Developed by
+          <img src="img/develop.jpg" alt="Develop company logo">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <aside class="popup">
+    <p class="popup-destination"></p>
+    <div class="popup-content">
+      <img class="popup-title" src="img/second.png" alt="Second item">
+      <div class="popup-description">
+        <h4 class="popup-heading">Плетеное креслоПлетеное кресло</h4>
+        <div class="popup-info">
+          <div class="popup-count">1</div>
+          <div class="popup-price">3999 <span class="ruble"></span></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/product-page.js"></script>
+</body>

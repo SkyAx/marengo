@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Мебель и интерьер</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/interior.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="row container">
+        <a class="nav-btn fa fa-bars" href="#"></a>
+        <a class="main-phone" href="tel:+78003333672">
+          <i class="fa fa-phone"></i>
+          +7(800)333-36-72
+        </a>
+        <a class="logo" href="/">
+          <img src="img/logo.svg" alt="Logotype">
+        </a>
+        <div class="user-actions">
+          <a class="fa fa-search search-btn" href="#"></a>
+          <a class="fa fa-heart-o bookmarks-btn" href="#">
+            <span class="count">
+            </span>
+          </a>
+          <a class="fa fa-shopping-cart cart-btn" href="#">
+            <span class="count">
+            </span>
+          </a>
+          <a class="fa fa-user-o login-btn" href="#"></a>
+        </div>
+      </div>
+      <nav class="main-nav row">
+        <div class="user-actions secondary">
+          <a class="login-btn" href="#">
+            <i class="fa fa-user-o"></i>
+            Личный кабинет
+          </a>
+          <a class="bookmarks-btn" href="#">
+            <i class="fa fa-heart-o">
+              <span class="count">
+              </span>
+            </i>
+            Мои желания
+          </a>
+        </div>
+        <a class="main-nav-item" href="collections.html">Коллекции</a>
+        <a class="main-nav-item" href="#">Мебель и интерьер</a>
+        <a class="main-nav-item" href="#">Аксессуары</a>
+        <a class="main-nav-item" href="#">Скидки</a>
+        <div class="secondary main-nav-item">
+          <div class="to-client">
+            <a class="link" href="#">Доставка и оплата</a>
+            <a class="link" href="#">Возврат и обмен</a>
+          </div>
+          <div class="contacts">
+            <a class="link" href="tel:+78003333672">+7 (800) 333-36-72</a>
+            <a class="link" href="mailto:example@mail.com">example@mail.com</a>
+            <a class="link address" href="#">г.Город, ул.Продольная д.23 к.2 кв. 190</a>
+          </div>
+        </div>
+      </nav>
+      <div class="shadow"></div>
+      <div class="search">
+        <form>
+          <input class="search-field" type="text" placeholder="Поиск">
+          <button class="fa fa-search to-search"></button>
+        </form>
+      </div>
+      <div class="bookmarks">
+        <ul class="bookmarks-list">
+          <li class="empty">Жалемых товаров пока нет</li>
+          <!-- <li class="bookmarks-item">
+            <img class="bookmarks-item-title" src="img/second.png" alt="Second item">
+            <div class="bookmarks-item-description">
+              <h4 class="bookmarks-item-heading">Плетеное кресло</h4>
+              <div class="bookmarks-item-info">
+                <div class="bookmarks-item-count">1</div>
+                <div class="bookmarks-item-price">3999 <span class="ruble"></span></div>
+              </div>
+            </div>
+            <a class="fa fa-trash-o bookmarks-item-del-btn" href="#"></a>
+          </li> -->
+        </ul>
+        <div class="bookmarks-bottom">
+          <a href="#" class="to-billing btn">Все</a>
+        </div>
+      </div>
+      <div class="cart">
+        <ul class="cart-list">
+          <li class="empty">В вашей корзине пусто</li>
+          <!-- <li class="cart-item">
+            <img class="cart-item-title" src="img/second.png" alt="Second item">
+            <div class="cart-item-description">
+              <h4 class="cart-item-heading">Плетеное кресло</h4>
+              <div class="cart-item-info">
+                <div class="cart-item-count">1</div>
+                <div class="cart-item-price">3999 <span class="ruble"></span></div>
+              </div>
+            </div>
+            <a class="fa fa-trash-o cart-item-del-btn" href="#"></a>
+          </li> -->
+        </ul>
+        <div class="cart-bottom">
+          <div class="cart-info">
+            <p>Сумма</p>
+            <span class="cart-total-price">0 <span class="ruble"></span></span>
+          </div>
+          <a href="#" class="to-billing btn">Оплатить</a>
+        </div>
+      </div>
+      <div class="login">
+        <form action="">
+          <div class="row">
+            <label>Почта</label>
+            <input type="email" required>
+          </div>
+          <div class="row">
+            <label>Пароль</label>
+            <input type="password" required>
+          </div>
+          <a class="to-recovery" href="#">Забыли пароль?</a>
+          <button type="submit" class="to-login btn">Войти</button>
+        </form>
+      </div>
+    </div>
+    <div class="header-bottom"></div>
+  </header>
+  <main>
+    <div class="collection container">
+      <div class="filter-wrapper">
+        <div class="filter">
+          <h3>Фильтр</h3>
+          <div class="filter-category">
+            <h4>Категории</h4>
+            <ul class="filter-list">
+              <li>
+                <a class="link" href="#">Коллекции</a>
+              </li>
+              <li>
+                <a class="link" href="#">Мебель и интерьер</a>
+              </li>
+              <li>
+                <a class="link" href="#">Аксессуары</a>
+              </li>
+              <li>
+                <a class="link" href="#">Декор</a>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-sort">
+            <h4>Сортировка</h4>
+            <ul class="filter-list">
+              <li>
+                <a class="link" href="#">Популярное</a>
+              </li>
+              <li>
+                <a class="link" href="#">Новинки</a>
+              </li>
+              <li>
+                <a class="link" href="#">Цена по возрастанию</a>
+              </li>
+              <li>
+                <a class="link" href="#">Цена по убыванию</a>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-price">
+            <h4>Цена</h4>
+            <form class="filter-list">
+              <div class="form-col">
+                <label>от</label>
+                <input type="text" value="10">
+              </div>
+              <div class="form-col">
+                <label>до</label>
+                <input type="text" value="100000">
+              </div>
+              <a class="link" href="#">только со скидкой</a>
+            </form>
+          </div>
+          <div class="filter-color">
+            <h4>Цвет</h4>
+            <ul class="filter-list">
+              <li>
+                <a class="link" href="#">Белый</a>
+              </li>
+              <li>
+                <a class="link" href="#">Черный</a>
+              </li>
+              <li>
+                <a class="link" href="#">Серый</a>
+              </li>
+              <li>
+                <a class="link" href="#">Бежевый</a>
+              </li>
+              <li>
+                <a class="link" href="#">Желтый</a>
+              </li>
+              <li>
+                <a class="link" href="#">Оранжевый</a>
+              </li>
+              <li>
+                <a class="link" href="#">Зеленый</a>
+              </li>
+              <li>
+                <a class="link" href="#">Красный</a>
+              </li>
+              <li>
+                <a class="link" href="#">Синий</a>
+              </li>
+              <li>
+                <a class="link" href="#">Фиолетовый</a>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-action">
+            <a href="#" class="to-submit btn">Применить</a>
+            <a href="#" class="to-clear btn">Очистить</a>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="filter-button">
+          <a class="btn" href="#">Фильтр</a>
+        </div>
+        <h2 class="lined-heading">Мебель и интерьер</h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a href="/">MARENGO</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a href="#">Категории</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a href="#">Коллекции</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a href="#">Maitai</a>
+          </li>
+        </ul>
+        <div class="items-list">
+          <a href="#" class="product">
+            <img class="product-title" src="img/maitai/1.jpg" alt="First slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Плетеное кресло</h3>
+              <div class="product-price">
+                <div class="old">5400 <span class="ruble"></span></div>
+                <div class="new">3999 <span class="ruble"></span></div>
+              </div>
+            </div>
+            <div class="product-discount">
+              30%
+            </div>
+          </a>
+          <a href="#" class="product">
+            <img class="product-title" src="img/maitai/2.jpg" alt="First slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Посуда из коллекции "Ультра"</h3>
+              <div class="product-price">
+                <div class="new">5000 <span class="ruble"></span></div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product">
+            <img class="product-title" src="img/maitai/3.jpg" alt="First slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Подушка с птицами</h3>
+              <div class="product-price">
+                <div class="new">1300 <span class="ruble"></span></div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product">
+            <img class="product-title" src="img/maitai/4.jpg" alt="First slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Набор сковородок</h3>
+              <div class="product-price">
+                <div class="new">5400 <span class="ruble"></span></div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product">
+            <img class="product-title" src="img/maitai/5.jpg" alt="First slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Подсвечники</h3>
+              <div class="product-price">
+                <div class="new">5000 <span class="ruble"></span></div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product">
+            <img class="product-title" src="img/maitai/6.jpg" alt="First slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Набор подушек</h3>
+              <div class="product-price">
+                <div class="new">3000 <span class="ruble"></span></div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product">
+            <img class="product-title" src="img/maitai/7.jpg" alt="First slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Тарелка</h3>
+              <div class="product-price">
+                <div class="new">2400 <span class="ruble"></span></div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product">
+            <img class="product-title" src="img/maitai/8.jpg" alt="First slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Посуда из коллекции "Ультра"</h3>
+              <div class="product-price">
+                <div class="new">5000 <span class="ruble"></span></div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product">
+            <img class="product-title" src="img/maitai/9.jpg" alt="First slide">
+            <div class="product-action">
+              <i class="to-watch fa fa-eye"></i>
+              <i class="to-bookmarks fa fa-heart"></i>
+              <i class="to-cart fa fa-shopping-cart"></i>
+            </div>
+            <div class="product-description">
+              <h3 class="product-name">Подушка с птицами</h3>
+              <div class="product-price">
+                <div class="old">1700 <span class="ruble"></span></div>
+                <div class="new">1300 <span class="ruble"></span></div>
+              </div>
+            </div>
+            <div class="product-discount">
+              7%
+            </div>
+          </a>
+        </div>
+        <a href="#" class="more btn">Больше</a>
+        <article class="items-description">
+          <h3>Мебель и интерьер</h3>
+          <p>
+            В этом месяце мы представляем серию новых товаров для уютной атмосферы дома.
+            Marengo предлагает окунуться в атмосферу насыщенных цветов с золотыми акцентами
+            и деталями, напоминающими о тропиках. Среди наших новинок вы найдете множество
+            тестильных товаров - от ковров до пледов, которые помогут сделать ваш дом еще уютнее.
+          </p>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-top container">
+      <div class="nav">
+        <h4>Навигация</h4>
+        <div class="nav-list">
+          <a class="nav-item link" href="collections.html">Коллекции</a>
+          <a class="nav-item link" href="#">Мебель и интерьер</a>
+          <a class="nav-item link" href="#">Аксессуары</a>
+          <a class="nav-item link" href="#">Скидки</a>
+        </div>
+      </div>
+      <div class="to-client">
+        <h4>Клиенту</h4>
+        <div class="to-client-list">
+          <a class="to-client-item link" href="#">Доставка и оплата</a>
+          <a class="to-client-item link" href="#">Возврат и обмен</a>
+        </div>
+      </div>
+      <div class="contacts">
+        <h4>Контакты</h4>
+        <div class="contacts-list">
+          <a class="contacts-item phone num link" href="tel:+78003333672">+7(800)333-36-72</a>
+          <a class="contacts-item link" href="#">адрес</a>
+          <a class="contacts-item mail link" href="mailto:">email</a>
+        </div>
+      </div>
+      <div class="follow">
+        <h4>Подписаться на рассылку</h4>
+        <form>
+          <input type="email" placeholder="Email Address" required>
+          <button class="fa fa-long-arrow-right"></button>
+        </form>
+        <div class="socials">
+          <a class="fa fa-instagram" href="#" target="_blank"></a>
+          <a class="fa fa-facebook" href="#" target="_blank"></a>
+          <a class="fa fa-vk" href="#" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="company">
+          Marengo &copy; 2017
+        </div>
+        <div class="develop">
+          Developed by
+          <img src="img/develop.jpg" alt="Develop company logo">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <aside class="popup">
+    <p class="popup-destination"></p>
+    <div class="popup-content">
+      <img class="popup-title" src="img/second.png" alt="Second item">
+      <div class="popup-description">
+        <h4 class="popup-heading">Плетеное креслоПлетеное кресло</h4>
+        <div class="popup-info">
+          <div class="popup-count">1</div>
+          <div class="popup-price">3999 <span class="ruble"></span></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/filter-page.js"></script>
+</body>
+</html>

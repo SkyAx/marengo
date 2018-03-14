@@ -1,0 +1,285 @@
+@import "helpers/_variables";
+
+.header-bottom{
+  background: url('../img/maitai/header-bottom.jpg') no-repeat center / cover;
+}
+
+.collection{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .filter-button{
+    margin: 15px 0;
+    display: none;
+    padding: 15px;
+    align-items: stretch;
+    justify-content: space-between;
+
+    a{
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+
+  .filter{
+    border: 1px solid @border-grey;
+    padding: 10px 16px;
+
+    &-wrapper{
+      width: 25%;
+    }
+
+    &.sticky{
+      position: sticky;
+      top: 120px;
+      margin-bottom: 112px;
+    }
+
+    h3{
+      font-weight: 400;
+      margin-left: 14px;
+      font-size: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid @border-grey;
+      display: none;
+    }
+
+    h4{
+      font-size: 14px;
+      margin: 0 auto 20px;
+      font-weight: 400;
+      cursor: pointer;
+
+      &::before{
+        margin-right: 5px;
+        font-size: 14px;
+        content: '+';
+        display: inline-block;
+        width: 8px;
+        height: 22px;
+        line-height: 1;
+        vertical-align: baseline;
+      }
+
+      &.active{
+        &::before{
+          width: 8px;
+          display: inline-block;
+          font-size: 20px;
+          height: 22px;
+          line-height: 1;
+          content: '-';
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .filter-list{
+      display: none;
+      margin-left: 13px;
+    }
+
+    li{
+      font-size: 14px;
+      font-weight: 300;
+
+      &:not(:last-child){
+        margin-bottom: 5px;
+      }
+    }
+
+    &-category{
+      margin-bottom: 25px;
+    }
+
+    &-sort{
+      margin-bottom: 25px;
+    }
+
+    &-price{
+      margin-bottom: 25px;
+
+      label{
+        font-weight: 300;
+        font-size: 14px;
+      }
+
+      input{
+        width: 70px;
+        height: 24px;
+        text-align: left;
+        padding: 0 5px;
+        outline: none;
+      }
+
+      a{
+        display: inline-block;
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+      .form-col{
+        display: inline-block;
+
+        &:first-child{
+          margin-right: 5px;
+        }
+      }
+    }
+
+    &-color{
+      margin-bottom: 25px;
+    }
+
+    &-action{
+      display: flex;
+      margin-bottom: 25px;
+      justify-content: space-around;
+
+      .btn{
+        padding: 8px 6px;
+      }
+    }
+  }
+
+  .items{
+    width: 72%;
+    text-align: center;
+
+    &-list{
+      margin-top: 30px;
+      flex-flow: wrap;
+      display: flex;
+      justify-content: space-between;
+
+      .product{
+        width: 30%;
+      }
+    }
+
+    .breadcrumbs{
+      text-align: left;
+    }
+
+    .btn{
+      margin: 0 auto 40px;
+    }
+  }
+}
+
+@media all and (max-width: 1020px) {
+  .collection {
+    .items-list .product{
+      width: 47.5%;
+    }
+
+    .filter-action{
+      flex-direction: column;
+
+      .btn{
+        margin-bottom: 15px;
+      }
+    }
+
+    .filter-price .form-col{
+
+      &:first-child{
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 660px) {
+  main{
+    margin-top: 0;
+  }
+
+  .header-bottom{
+    .collection{
+      width: 100%;
+      padding: 60px 15% 60px 15%;
+      min-height: 256px;
+    }
+  }
+
+  .collection{
+
+    .breadcrumbs{
+      display: none;
+    }
+
+    .filter-button{
+      display: block;
+    }
+
+    .filter-wrapper{
+      display: none;
+
+      &.active{
+        overflow-y: scroll;
+        position: fixed;
+        display: block;
+        right: 0;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+        background: rgba(0, 0, 0, .6);
+        border: none;
+        top: 92px;
+
+        &::-webkit-scrollbar{
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar-track{
+          background-color: @white;
+        }
+
+        &::-webkit-scrollbar-thumb{
+          background-color: @black;
+          border-radius: 1000px;
+          border: 2px solid @white;
+        }  
+      }
+    }
+
+    .filter{
+      position: absolute;
+      border: none;
+      background-color: @white;
+      right: 0;
+      width: 280px;
+      z-index: 1000;
+
+      h3{
+        display: block;
+      }
+
+      &.sticky{
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        overflow-y: scroll;
+      }
+    }
+
+    .items{
+      width: 100%;
+
+      &-list{
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 460px) {
+  .collection .items-list .product{
+    width: 100%;
+  }
+}
